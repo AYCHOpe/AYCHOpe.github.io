@@ -3,7 +3,7 @@
 {% endif %}
 
 {% if (item is not empty) and (item.last_name is not empty) %}
-<section class="author-big column group">
+<section class="author-big column group" data-tpl="vtc{{ item.id }}">
     <div class="img-container">
         {% if item.values.image is defined and item.values.image is not empty and item.values.image.file|default() != "" %}
             <a href="{{ item.link() }}">

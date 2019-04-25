@@ -2,7 +2,7 @@
     {% set item = record %}
 {% endif %}
 
-<article class="teaser group">
+<article class="teaser group" data-tpl="vt{{ item.id }}">
     <div class="img-container">
 
         {% if item.teaser_image is defined and item.teaser_image is not empty %}
